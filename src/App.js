@@ -20,7 +20,7 @@
 // export default App;
 
 
-import React, {useEffect, useMemo, useState} from "react";
+import React, {useEffect, useState} from "react";
 import styles from './styles/app.css'
 import PostList from "./components/PostList";
 import MyButton from "./components/Ui/Button/MyButton";
@@ -110,3 +110,4 @@ function App() {
 }
 
 export default App;
+

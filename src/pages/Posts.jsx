@@ -1,22 +1,15 @@
-import React, {useEffect, useMemo, useState} from "react";
-import Counter from "../components/Counter";
-import Input from "../components/Input";
-import ClassCounter from "../components/ClassCounter";
+import React, {useEffect, useState} from "react";
 import styles from '../styles/app.css'
-import PostItem from "../components/PostItem";
 import PostList from "../components/PostList";
 import MyButton from "../components/Ui/Button/MyButton";
-import MyInput from "../components/Ui/Input/MyInput";
 import PostForm from "../components/PostForm";
-import MySelect from "../components/Ui/Select/MySelect";
 import PostFilter from "../components/PostFilter";
 import MyModal from "../components/Ui/MyModal/MyModal";
 import {usePosts} from "../hooks/usePosts";
-import axios from "axios";
 import PostService from "../API/PostService";
 import Loader from "../components/Ui/Loader/Loader";
 import {useFetching} from "../hooks/useFetching";
-import {getPagesArray, getPagesCount} from "../utils/pages";
+import {getPagesCount} from "../utils/pages";
 import Pagination from "../components/Ui/Pagination/Pagination";
 
 function Posts() {
