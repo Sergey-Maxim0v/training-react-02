@@ -4,11 +4,14 @@ import About from "../pages/About";
 import Posts from "../pages/Posts";
 import Error from "../pages/Error";
 import PostIdPage from "../pages/PostIdPage";
-import router from "../router/router";
+import Login from "../pages/Login";
+import {publicRoutes, privateRoutes} from "../router/router";
 
 const AppRouter = () => {
 	return (
 		<Routes>
+			{privateRoutes}
+			{publicRoutes}
 			{/*{router.map(route =>*/}
 			{/*	<Route*/}
 			{/*		path={route.path}*/}
@@ -17,10 +20,11 @@ const AppRouter = () => {
 			{/*		key={route.path}*/}
 			{/*	/>*/}
 			{/*)}*/}
-			<Route path="/about" element={<About/>}/>
-			<Route path="/posts" element={<Posts/>}/>
-			<Route path="/posts/:id" element={<PostIdPage/>}/>
-			<Route path="/error" element={<Error/>}/>
+			{/*<Route path="/about" element={<About/>}/>*/}
+			{/*<Route path="/posts" element={<Posts/>}/>*/}
+			{/*<Route path="/posts/:id" element={<PostIdPage/>}/>*/}
+			{/*<Route path="/error" element={<Error/>}/>*/}
+			{/*<Route path="/login" element={<Login/>}/>*/}
 			<Route path="*" element={<Navigate to="/posts" replace/>}/>
 		</Routes>
 	);
