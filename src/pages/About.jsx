@@ -7,11 +7,20 @@ const About = () => {
 				Тренировочный проект по React
 			</h1>
 			<hr/>
-			<a
-				href='https://youtu.be/GNrdg3PzpJQ'
-				target='_blank'
-				children={'youtube: \'Ulbi TV\''}
-			/>
+			<div>
+				<a
+					href='https://youtu.be/GNrdg3PzpJQ'
+					target='_blank'
+					children={'видеокурс youtube: \'Ulbi TV\''}
+				/>
+			</div>
+			<div>
+				<a
+					href='https://jsonplaceholder.typicode.com/'
+					target='_blank'
+					children={'источник постов: jsonplaceholder.typicode.com'}
+				/>
+			</div>
 		</div>
 	);
 };
