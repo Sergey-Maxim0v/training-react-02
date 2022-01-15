@@ -23,6 +23,8 @@
  
 Пароль для авторизации не требуется, просто нажмите `"Войти"`
 
+Посты взяты из [jsonplaceholder.typicode.com](https://jsonplaceholder.typicode.com/)
+
 Цель проекта: 
 ---
 ### тренировка React:
